@@ -23,13 +23,13 @@ final class SecureUrlGenerator
      * e.g. `https://files-example.b-cdn.net` or `https://files.example.com`.
      * @var string
      */
-    private string $hostname;
+    private $hostname;
 
     /**
      * Pull Zone Url Token Authentication Key.
      * @var string
      */
-    private string $token;
+    private $token;
 
     /**
      * SecureUrl constructor.

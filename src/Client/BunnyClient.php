@@ -27,13 +27,13 @@ class BunnyClient
     protected const SCHEME = 'https';
 
     /** @var string */
-    protected string $apiKey;
+    protected $apiKey;
 
     /** @var string */
-    protected string $hostRequest;
+    protected $hostRequest;
 
     /** @var HttpClientInterface */
-    protected HttpClientInterface $client;
+    protected $client;
 
     /**
      * BunnyClient constructor.

@@ -12,9 +12,12 @@
     }
   ],
   "require": {
-    "php": "^7.4|^8.0",
+    "php": "^7.3|^8.0",
     "symfony/http-client": "^4.4|^5.0|^6.0",
     "ext-json": "*"
+  },
+  "require-dev": {
+    "rector/rector": "^0.14.6"
   },
   "autoload": {
     "psr-4": {

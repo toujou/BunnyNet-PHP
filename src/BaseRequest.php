@@ -542,11 +542,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PullZoneEndpoint::GET_ORIGIN_SHIELD_QUEUE_STATISTICS;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [$pullZoneId],
-            $query,
-        );
+        return $this->request($endpoint, [$pullZoneId], $query);
     }
 
     /**
@@ -561,11 +557,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PullZoneEndpoint::GET_SAFEHOP_STATISTICS;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [$pullZoneId],
-            $query,
-        );
+        return $this->request($endpoint, [$pullZoneId], $query);
     }
 
     /**
@@ -580,11 +572,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PullZoneEndpoint::GET_OPTIMIZER_STATISTICS;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [$pullZoneId],
-            $query,
-        );
+        return $this->request($endpoint, [$pullZoneId], $query);
     }
 
     /**
@@ -599,11 +587,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PullZoneEndpoint::GET_STATISTICS;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [$pullZoneId],
-            $query,
-        );
+        return $this->request($endpoint, [$pullZoneId], $query);
     }
 
     /**
@@ -617,11 +601,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PullZoneEndpoint::LOAD_FREE_CERTIFICATE;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -871,11 +851,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PurgeEndpoint::PURGE_URL;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -889,11 +865,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = PurgeEndpoint::PURGE_URL_HEADER;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -907,11 +879,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = StatisticsEndpoint::GET_STATISTICS;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -925,11 +893,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = StorageEndpoint::LIST_STORAGE_ZONES;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -1008,11 +972,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = StorageEndpoint::RESET_PASSWORD_QUERY;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**
@@ -1040,11 +1000,7 @@ final class BaseRequest extends BunnyClient
         $endpoint = StorageEndpoint::RESET_READONLY_PASSWORD;
         $query = $this->validateQueryField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [],
-            $query,
-        );
+        return $this->request($endpoint, [], $query);
     }
 
     /**

@@ -21,7 +21,7 @@ use ToshY\BunnyNet\Exception\FileDoesNotExistException;
 final class VideoStreamRequest extends BunnyClient
 {
     /** @var string */
-    protected string $apiKey;
+    protected $apiKey;
 
     /**
      * Stream constructor.
@@ -44,10 +44,7 @@ final class VideoStreamRequest extends BunnyClient
     {
         $endpoint = CollectionEndpoint::GET_COLLECTION;
 
-        return $this->request(
-            $endpoint,
-            [$libraryId, $collectionId],
-        );
+        return $this->request($endpoint, [$libraryId, $collectionId]);
     }
 
     /**
@@ -98,10 +95,7 @@ final class VideoStreamRequest extends BunnyClient
     {
         $endpoint = CollectionEndpoint::DELETE_COLLECTION;
 
-        return $this->request(
-            $endpoint,
-            [$libraryId, $collectionId],
-        );
+        return $this->request($endpoint, [$libraryId, $collectionId]);
     }
 
     /**
@@ -115,11 +109,7 @@ final class VideoStreamRequest extends BunnyClient
         $endpoint = CollectionEndpoint::GET_COLLECTION_LIST;
         $query = $this->validateBodyField($query, $endpoint['query']);
 
-        return $this->request(
-            $endpoint,
-            [$libraryId],
-            $query,
-        );
+        return $this->request($endpoint, [$libraryId], $query);
     }
 
     /**
@@ -202,10 +192,7 @@ final class VideoStreamRequest extends BunnyClient
     {
         $endpoint = VideoEndpoint::REENCODE_VIDEO;
 
-        return $this->request(
-            $endpoint,
-            [$libraryId, $videoId],
-        );
+        return $this->request($endpoint, [$libraryId, $videoId]);
     }
 
     /**

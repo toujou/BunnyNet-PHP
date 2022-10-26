@@ -22,10 +22,10 @@ use ToshY\BunnyNet\Exception\RegionDoesNotExistException;
 final class EdgeStorageRequest extends BunnyClient
 {
     /** @var array */
-    private array $host;
+    private $host;
 
     /** @var string */
-    protected string $apiKey;
+    protected $apiKey;
 
     /**
      * EdgeStorage constructor.
@@ -146,10 +146,7 @@ final class EdgeStorageRequest extends BunnyClient
     {
         $endpoint = ManageEndpoint::DELETE_FILE;
 
-        return $this->request(
-            $endpoint,
-            [$storageZoneName, $path, $fileName],
-        );
+        return $this->request($endpoint, [$storageZoneName, $path, $fileName]);
     }
 
     /**
@@ -166,9 +163,6 @@ final class EdgeStorageRequest extends BunnyClient
             $pathParameters = [$storageZoneName];
         }
 
-        return $this->request(
-            $endpoint,
-            $pathParameters,
-        );
+        return $this->request($endpoint, $pathParameters);
     }
 }
